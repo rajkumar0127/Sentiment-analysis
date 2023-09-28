@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form method="POST" action="/">
+        <label for="text">Enter text:</label>
+        <input type="text" id="text" name="text" required>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if sentiment %}
+    <p>The sentiment is: {{ sentiment }}</p>
+    {% endif %}
+</body>
+</html>
